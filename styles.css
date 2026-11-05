@@ -689,7 +689,7 @@ html, body { background: var(--page-background, #fffaf2); }
 
 html[data-theme="dark"] .page-content :is(
   .welcome-copy, .lesson-card h3, .lesson-meta, .lesson-card-bottom,
-  .vocabulary-card h3, .vocabulary-translation, .vocabulary-pattern,
+  .vocabulary-card h3,
   .holiday-copy h3, .holiday-date, .holiday-description, .holiday-fact, .holiday-vocabulary,
   .review-panel p, .review-panel h3, .about-copy, .about-copy p, .about-copy li,
   .practice-card h2, .practice-card > p, .quiz-question, .quiz-answer, .quiz-feedback,
@@ -698,6 +698,45 @@ html[data-theme="dark"] .page-content :is(
   .study-planner-heading h2, .study-field, .study-field span, .study-plan-result h3, .study-plan-result p,
   .study-ai-prompt-label, .section-heading h2
 ) { color: #f3f4f6 !important; }
+html[data-theme="dark"] .vocabulary-card,
+html[data-theme="dark"] .vocabulary-item {
+  border-color: #41434a;
+  background: #1c1e22;
+}
+html[data-theme="dark"] .page-content .vocabulary-card h3 { color: #f3f4f6 !important; }
+html[data-theme="dark"] .page-content .vocabulary-translation,
+html[data-theme="dark"] .vocabulary-item span { color: #d1d5db !important; }
+html[data-theme="dark"] .vocabulary-topic { color: #f0b18e; }
+html[data-theme="dark"] .vocabulary-kind { color: #b7b0a7; }
+html[data-theme="dark"] .vocabulary-pattern {
+  border: 1px solid #4a3e34;
+  background: #302b27;
+  color: #e2c5ad !important;
+}
+html[data-theme="dark"] .vocabulary-pattern span { color: #f0b18e; }
+html[data-theme="dark"] .vocabulary-library .vocab-total,
+html[data-theme="dark"] .library-tabs,
+html[data-theme="dark"] .topic-filter {
+  border-color: #41434a;
+  background: #1c1e22;
+  color: #d1d5db;
+}
+html[data-theme="dark"] .library-tab.active,
+html[data-theme="dark"] .topic-filter.active {
+  border-color: #6b4a3d;
+  background: #342b29;
+  color: #ffd3b8;
+}
+html[data-theme="dark"] .search-box {
+  border-color: #41434a;
+  background: #1c1e22;
+}
+html[data-theme="dark"] .search-box input { color: #f3f4f6; }
+html[data-theme="dark"] .search-box input::placeholder { color: #aaa39a; }
+html[data-theme="dark"] .empty-vocabulary {
+  border-color: #555860;
+  color: #d1d5db;
+}
 html[data-theme="dark"] .learning-preferences,
 html[data-theme="dark"] .study-planner { border-color: #41434a; background: #23252a; }
 html[data-theme="dark"] .learning-preferences > summary,
@@ -724,6 +763,8 @@ html[data-theme="dark"] #lesson-dialog .quiz-feedback.error { color: #ffb4a5; }
 
 .feedback-wall { scroll-margin-top: 82px; }
 .feedback-wall-intro { max-width: 760px; margin: -5px 0 14px; color: #81786c; font-size: 15px; line-height: 1.6; }
+.feedback-whatsapp-contact { margin: 0 0 14px; color: #62594e; font-size: 15px; line-height: 1.6; }
+.feedback-whatsapp-contact a { color: #27834b; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
 .feedback-wall-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .learner-feedback-card { min-width: 0; padding: 17px; border: 1px solid #f0e5d8; border-radius: 12px; background: #fffdfa; }
 .learner-feedback-meta { display: grid; grid-template-columns: 38px minmax(0, 1fr) auto; align-items: center; gap: 10px; }
@@ -737,6 +778,8 @@ html[data-theme="dark"] #lesson-dialog .quiz-feedback.error { color: #ffb4a5; }
 html[data-theme="dark"] .learner-feedback-card { border-color: #41434a; background: #23252a; }
 html[data-theme="dark"] .feedback-wall-intro,
 html[data-theme="dark"] .demo-profile-label { color: #d1d5db; }
+html[data-theme="dark"] .feedback-whatsapp-contact { color: #d1d5db; }
+html[data-theme="dark"] .feedback-whatsapp-contact a { color: #8fe0a8; }
 html[data-theme="dark"] .learner-feedback-meta h3,
 html[data-theme="dark"] .learner-feedback-card blockquote { color: #f3f4f6; }
 html[data-theme="dark"] .learner-level-badge { background: #3a302d; color: #ffd3b8; }

@@ -407,6 +407,8 @@ const studyFeedbackTranslations = {
     feedbackWallTitle: "Learner feedback",
     feedbackWallBadge: "FICTIONAL PROFILES",
     feedbackWallIntro: "These two fictional learner profiles and comments are examples only, not reviews from real students.",
+    feedbackContactPrompt: "Want to share feedback? Contact Mimi directly via",
+    feedbackContactLink: "WhatsApp ↗",
     demoProfileLabel: "Fictional profile · not a real student",
     demoRating: "5 out of 5 stars · fictional sample",
     demoFeedbackOne: "The short dialogues and pronunciation practice helped me feel more confident ordering food and asking for directions.",
@@ -420,6 +422,8 @@ const studyFeedbackTranslations = {
     feedbackWallTitle: "学习者反馈",
     feedbackWallBadge: "虚构资料",
     feedbackWallIntro: "以下两份学习者资料和评价均为虚构示例，并非真实学生的评价。",
+    feedbackContactPrompt: "想提出建议？可以直接通过以下方式联系 Mimi：",
+    feedbackContactLink: "WhatsApp ↗",
     demoProfileLabel: "虚构资料 · 非真实学生",
     demoRating: "5 星 · 虚构示例",
     demoFeedbackOne: "简短对话和发音练习让我更有信心地点餐和问路。",
@@ -433,6 +437,8 @@ const studyFeedbackTranslations = {
     feedbackWallTitle: "学習者からの感想",
     feedbackWallBadge: "架空プロフィール",
     feedbackWallIntro: "以下のプロフィールと感想は表示例として作成した架空の内容で、実際の受講生による評価ではありません。",
+    feedbackContactPrompt: "ご意見がありますか？こちらからMimiに直接ご連絡いただけます：",
+    feedbackContactLink: "WhatsApp ↗",
     demoProfileLabel: "架空のプロフィール · 実在の学習者ではありません",
     demoRating: "5つ星 · 架空のサンプル",
     demoFeedbackOne: "短い会話と発音練習のおかげで、食事を注文したり道を尋ねたりする自信がつきました。",
@@ -446,6 +452,8 @@ const studyFeedbackTranslations = {
     feedbackWallTitle: "학습자 후기",
     feedbackWallBadge: "가상 프로필",
     feedbackWallIntro: "아래 두 프로필과 후기는 화면 예시를 위한 가상 내용이며 실제 학생의 후기가 아닙니다.",
+    feedbackContactPrompt: "의견을 보내고 싶으신가요? 다음 방법으로 Mimi에게 직접 연락할 수 있어요:",
+    feedbackContactLink: "WhatsApp ↗",
     demoProfileLabel: "가상 프로필 · 실제 학생 아님",
     demoRating: "별점 5점 · 가상 예시",
     demoFeedbackOne: "짧은 대화와 발음 연습 덕분에 음식 주문과 길 묻기에 자신감이 생겼어요.",
@@ -459,6 +467,8 @@ const studyFeedbackTranslations = {
     feedbackWallTitle: "Opiniones de estudiantes",
     feedbackWallBadge: "PERFILES FICTICIOS",
     feedbackWallIntro: "Estos dos perfiles y comentarios son ejemplos ficticios, no opiniones de estudiantes reales.",
+    feedbackContactPrompt: "¿Quieres compartir una opinión? Puedes contactar directamente con Mimi por",
+    feedbackContactLink: "WhatsApp ↗",
     demoProfileLabel: "Perfil ficticio · no es un estudiante real",
     demoRating: "5 estrellas · ejemplo ficticio",
     demoFeedbackOne: "Los diálogos breves y la práctica de pronunciación me ayudaron a sentir más confianza al pedir comida y preguntar cómo llegar.",
@@ -472,6 +482,8 @@ const studyFeedbackTranslations = {
     feedbackWallTitle: "آراء المتعلمين",
     feedbackWallBadge: "ملفات افتراضية",
     feedbackWallIntro: "الملفان والتعليقان التاليان أمثلة خيالية لعرض التصميم وليسا آراء من طلاب حقيقيين.",
+    feedbackContactPrompt: "هل ترغب في إرسال ملاحظات؟ يمكنك التواصل مباشرة مع Mimi عبر",
+    feedbackContactLink: "WhatsApp ↗",
     demoProfileLabel: "ملف خيالي · ليس طالباً حقيقياً",
     demoRating: "5 نجوم · مثال خيالي",
     demoFeedbackOne: "ساعدتني الحوارات القصيرة وتدريبات النطق على الشعور بثقة أكبر عند طلب الطعام والسؤال عن الاتجاهات.",
@@ -609,6 +621,8 @@ function applyFeedbackTranslations() {
   document.querySelector("#feedback-wall-title").textContent = t("feedbackWallTitle");
   document.querySelector("#feedback-demo-badge").textContent = t("feedbackWallBadge");
   document.querySelector("#feedback-wall-intro").textContent = t("feedbackWallIntro");
+  document.querySelector("#feedback-contact-prompt").textContent = t("feedbackContactPrompt");
+  document.querySelector("#feedback-contact-link").textContent = t("feedbackContactLink");
   document.querySelectorAll(".demo-profile-label").forEach((label) => {
     label.textContent = t("demoProfileLabel");
   });
