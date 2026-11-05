@@ -524,6 +524,33 @@ html[data-theme="dark"] .holiday-stage,
 html[data-theme="dark"] .feedback-card,
 html[data-theme="dark"] .lesson-dialog { background-color: #23252a; border-color: #3a3d43; color: #eee9e1; }
 html[data-theme="dark"] .practice-card { background: #302923; border-color: #473b30; }
+html[data-theme="dark"] .practice-icon { background: #493a31; color: #ffd0a6; }
+html[data-theme="dark"] .practice-tag { color: #f0c39b; }
+html[data-theme="dark"] .practice-time,
+html[data-theme="dark"] .quiz-question small { color: #d1c5b5; }
+html[data-theme="dark"] .practice-card .quiz-question { color: #f3f4f6; }
+html[data-theme="dark"] .practice-card .quiz-answer {
+  border-color: #55483f;
+  background: #25272c;
+  color: #eee9e1;
+}
+html[data-theme="dark"] .practice-card .quiz-answer:hover:not(:disabled) {
+  border-color: #bd8062;
+  background: #39302d;
+}
+html[data-theme="dark"] .practice-card .quiz-answer.correct {
+  border-color: #527a58;
+  background: #24382a;
+  color: #b8e3bf;
+}
+html[data-theme="dark"] .practice-card .quiz-answer.incorrect {
+  border-color: #8e574e;
+  background: #422c2a;
+  color: #ffd0c4;
+}
+html[data-theme="dark"] .practice-card .quiz-feedback { color: #b8d5b9; }
+html[data-theme="dark"] .practice-card .quiz-feedback.error { color: #ffb4a5; }
+html[data-theme="dark"] .practice-card .quiz-next { color: #f0a27d; }
 html[data-theme="dark"] .pronunciation-card,
 html[data-theme="dark"] .recordings-card { background: #2b2725; border-color: #443b36; }
 html[data-theme="dark"] .booking-card { background: #252b27; border-color: #3c473f; }
@@ -692,7 +719,7 @@ html[data-theme="dark"] .page-content :is(
   .vocabulary-card h3,
   .holiday-copy h3, .holiday-date, .holiday-description, .holiday-fact, .holiday-vocabulary,
   .review-panel p, .review-panel h3, .about-copy, .about-copy p, .about-copy li,
-  .practice-card h2, .practice-card > p, .quiz-question, .quiz-answer, .quiz-feedback,
+  .practice-card h2, .practice-card > p,
   .lesson-reading h3, .lesson-reading p, .lesson-reading li, .lesson-grammar h3, .lesson-grammar p, .lesson-grammar li,
   .lesson-dialog h2, .lesson-dialog h3, .lesson-dialog p, .lesson-dialog li,
   .study-planner-heading h2, .study-field, .study-field span, .study-plan-result h3, .study-plan-result p,
