@@ -42,7 +42,7 @@ const uiTranslations = {
     welcome: "Welcome!", goal: "Daily goal", today: "today", chooseLevel: "CHOOSE YOUR LEVEL", newLearner: "Beginner · learn your first everyday phrases",
     starter: "Begin speaking Vietnamese!", starterDescription: "Learn greetings, introductions and useful everyday situations.",
     advanced: "Say more, with confidence!", advancedDescription: "Practice talking about work, travel and everyday experiences.",
-    start: "Start learning", continue: "Continue learning", course: "Vietnamese course", allLessons: "24 everyday topics",
+    start: "Start learning", continue: "Continue learning", course: "Vietnamese class", allLessons: "24 everyday topics",
     search: "Search words, phrases or English meanings...", words: "Vocabulary", phrases: "Phrases", noResults: "No matching content. Try another search.",
     reading: "Reading practice", readAndAnswer: "Read and answer", translate: "Translate this content", grammar: "KEY GRAMMAR",
     reviewTitle: "Review corner", selectLesson: "Choose a lesson to review", listening: "Listening", speaking: "Speaking", writing: "Writing",
@@ -75,7 +75,7 @@ const uiTranslations = {
     welcome: "欢迎！", goal: "每日目标", today: "今天", chooseLevel: "选择学习级别", newLearner: "初学者 · 学习日常表达",
     starter: "开始说越南语吧！", starterDescription: "学习问候、自我介绍和日常实用表达。",
     advanced: "自信表达更多！", advancedDescription: "练习谈论工作、旅行和日常经历。",
-    start: "开始学习", continue: "继续学习", course: "越南语课程", allLessons: "24 个日常主题",
+    start: "开始学习", continue: "继续学习", course: "越南语课堂", allLessons: "24 个日常主题",
     search: "搜索词汇、句型或英文释义……", words: "词汇", phrases: "句型", noResults: "没有找到匹配内容，请尝试其他关键词。",
     reading: "阅读练习", readAndAnswer: "阅读并回答", translate: "翻译此内容", grammar: "重点语法",
     reviewTitle: "复习练习", selectLesson: "选择要复习的课程", listening: "听力", speaking: "口语", writing: "写作",
@@ -106,7 +106,7 @@ const uiTranslations = {
     welcome: "ようこそ！", goal: "毎日の目標", today: "今日", chooseLevel: "レベルを選択", newLearner: "初心者 · 日常会話の第一歩",
     starter: "ベトナム語を話してみよう！", starterDescription: "あいさつ、自己紹介、日常で使える表現を学びます。",
     advanced: "もっと自信を持って話そう！", advancedDescription: "仕事、旅行、日常の経験について練習します。",
-    start: "学習を始める", continue: "学習を続ける", course: "ベトナム語コース", allLessons: "日常会話の24テーマ",
+    start: "学習を始める", continue: "学習を続ける", course: "ベトナム語クラス", allLessons: "日常会話の24テーマ",
     search: "単語、フレーズ、英語の意味を検索…", words: "単語", phrases: "フレーズ", noResults: "見つかりませんでした。別の言葉をお試しください。",
     reading: "読解練習", readAndAnswer: "読んで答えましょう", translate: "この内容を翻訳", grammar: "重要な文法",
     reviewTitle: "復習コーナー", selectLesson: "復習するレッスンを選択", listening: "リスニング", speaking: "スピーキング", writing: "ライティング",
@@ -137,7 +137,7 @@ const uiTranslations = {
     welcome: "환영합니다!", goal: "일일 목표", today: "오늘", chooseLevel: "학습 단계 선택", newLearner: "초급 · 일상 표현부터 시작하기",
     starter: "베트남어로 말해 보세요!", starterDescription: "인사, 자기소개와 일상에서 유용한 표현을 배워요.",
     advanced: "더 자신 있게 표현해요!", advancedDescription: "직장, 여행, 일상 경험에 대해 연습해요.",
-    start: "학습 시작", continue: "학습 계속하기", course: "베트남어 과정", allLessons: "일상 회화 24개 주제",
+    start: "학습 시작", continue: "학습 계속하기", course: "베트남어 수업", allLessons: "일상 회화 24개 주제",
     search: "단어, 문장 또는 영어 뜻 검색...", words: "어휘", phrases: "문장", noResults: "검색 결과가 없습니다. 다른 검색어를 입력해 보세요.",
     reading: "읽기 연습", readAndAnswer: "읽고 답하기", translate: "이 내용 번역하기", grammar: "핵심 문법",
     reviewTitle: "복습 코너", selectLesson: "복습할 수업 선택", listening: "듣기", speaking: "말하기", writing: "쓰기",
@@ -168,7 +168,7 @@ const uiTranslations = {
     welcome: "¡Te damos la bienvenida!", goal: "Objetivo diario", today: "hoy", chooseLevel: "ELIGE TU NIVEL", newLearner: "Principiante · aprende tus primeras frases cotidianas",
     starter: "¡Empieza a hablar vietnamita!", starterDescription: "Aprende saludos, presentaciones y expresiones útiles para el día a día.",
     advanced: "¡Exprésate con más confianza!", advancedDescription: "Practica cómo hablar del trabajo, los viajes y las experiencias diarias.",
-    start: "Empezar a aprender", continue: "Continuar aprendiendo", course: "Curso de vietnamita", allLessons: "24 temas cotidianos",
+    start: "Empezar a aprender", continue: "Continuar aprendiendo", course: "Clase de vietnamita", allLessons: "24 temas cotidianos",
     search: "Busca palabras, frases o significados en inglés...", words: "Vocabulario", phrases: "Frases", noResults: "No se encontró contenido. Prueba con otra búsqueda.",
     reading: "Lectura de práctica", readAndAnswer: "Lee y responde", translate: "Traducir este contenido", grammar: "GRAMÁTICA CLAVE",
     reviewTitle: "Zona de repaso", selectLesson: "Elige una lección para repasar", listening: "Comprensión auditiva", speaking: "Expresión oral", writing: "Escritura",
@@ -199,7 +199,7 @@ const uiTranslations = {
     welcome: "أهلاً بك!", goal: "الهدف اليومي", today: "اليوم", chooseLevel: "اختر مستواك", newLearner: "مبتدئ · تعلّم عباراتك اليومية الأولى",
     starter: "ابدأ التحدث بالفيتنامية!", starterDescription: "تعلّم التحيات والتعريف بالنفس وعبارات الحياة اليومية.",
     advanced: "تحدث بثقة أكبر!", advancedDescription: "تدرّب على الحديث عن العمل والسفر والتجارب اليومية.",
-    start: "ابدأ التعلم", continue: "تابع التعلم", course: "دورة اللغة الفيتنامية", allLessons: "24 موضوعاً يومياً",
+    start: "ابدأ التعلم", continue: "تابع التعلم", course: "صف اللغة الفيتنامية", allLessons: "24 موضوعاً يومياً",
     search: "ابحث عن كلمات أو عبارات أو معانٍ بالإنجليزية...", words: "المفردات", phrases: "العبارات", noResults: "لم يتم العثور على نتائج. جرّب عبارة أخرى.",
     reading: "تدريب القراءة", readAndAnswer: "اقرأ وأجب", translate: "ترجم هذا المحتوى", grammar: "القواعد الأساسية",
     reviewTitle: "ركن المراجعة", selectLesson: "اختر درساً للمراجعة", listening: "الاستماع", speaking: "التحدث", writing: "الكتابة",
@@ -957,7 +957,7 @@ function applyDisplayLanguage() {
     ? t("starterDescription")
     : activeLevel === "a2" ? t("advancedDescription") : levelDescriptions[displayLanguage]?.[activeLevel] || levelDescriptions.en[activeLevel];
   document.querySelector("#continue-learning").firstChild.textContent = progress.completed.length ? `${t("continue")} ` : `${t("start")} `;
-  document.querySelector("#course-progress-title").textContent = `${t("course")} ${activeLevel.toUpperCase()}`;
+  document.querySelector("#course-progress-title").textContent = t("course");
   document.querySelector("#lesson-overline").textContent = `${t("lessonOverline")} · ${activeLevel.toUpperCase()}`;
   document.querySelector("#lesson-heading").firstChild.textContent = `${t("lessons")} · ${activeLevel.toUpperCase()} `;
   document.querySelector("#vocabulary-heading").firstChild.textContent = `${t("vocabulary")} · ${activeLevel.toUpperCase()} `;
@@ -972,7 +972,7 @@ function applyDisplayLanguage() {
   document.querySelector(".free-pill").textContent = t("freeStudy");
   document.querySelector("#exercise-heading").textContent = t("exerciseSection");
   document.querySelector("#exercise-heading").closest(".exercise-heading-row").querySelector(".section-overline").textContent = t("freePractice");
-  document.querySelector("#breadcrumb-level").textContent = `${t("course")} ${activeLevel.toUpperCase()}`;
+  document.querySelector("#breadcrumb-level").textContent = t("course");
   document.querySelector("#breadcrumb-current").textContent = t(location.hash.slice(1) || "home");
   document.querySelector("#dialog-intro").textContent = t("readAndAnswer");
   document.querySelector("#dialog-reading-heading").textContent = t("readAndAnswer");
@@ -1032,7 +1032,7 @@ function applyDisplayLanguage() {
     card.querySelector(".recordings-qr").src =
       `https://api.qrserver.com/v1/create-qr-code/?size=220x220&margin=8&data=${encodeURIComponent(recordingFolders[levelKey].split("?")[0])}`;
   });
-  document.querySelector("#sidebar-level").textContent = `${t("course")} · ${activeLevel.toUpperCase()}`;
+  document.querySelector("#sidebar-level").textContent = t("course");
   document.querySelector("#student-level").firstChild.textContent = `${t("student")} ${activeLevel.toUpperCase()}`;
   document.querySelector("#hero-level-pill").textContent = `${t("level")} ${activeLevel.toUpperCase()}`;
   document.querySelector("#today-label").textContent = `${t("today")} · ${dateLabel}`;
@@ -2058,11 +2058,11 @@ function updateProgress() {
   document.querySelector(".goal-check").hidden = progress.minutes < 20;
   document.querySelector("#continue-learning").firstChild.textContent = progress.completed.length ? `${t("continue")} ` : `${t("start")} `;
   document.querySelector(".nav-count").textContent = String(currentLessons.length).padStart(2, "0");
-  document.querySelector("#sidebar-level").textContent = `${t("course")} · ${activeLevel.toUpperCase()}`;
+  document.querySelector("#sidebar-level").textContent = t("course");
   document.querySelector("#student-level").firstChild.textContent = `${t("student")} ${activeLevel.toUpperCase()}`;
-  document.querySelector("#breadcrumb-level").textContent = `${t("course")} ${activeLevel.toUpperCase()}`;
+  document.querySelector("#breadcrumb-level").textContent = t("course");
   document.querySelector("#hero-level-pill").textContent = `${t("level")} ${activeLevel.toUpperCase()}`;
-  document.querySelector("#course-progress-title").textContent = `${t("course")} ${activeLevel.toUpperCase()}`;
+  document.querySelector("#course-progress-title").textContent = t("course");
   document.querySelector("#lesson-heading").firstChild.textContent = `${t("lessons")} · ${activeLevel.toUpperCase()} `;
   document.querySelector("#vocabulary-heading").firstChild.textContent = `${t("vocabulary")} · ${activeLevel.toUpperCase()} `;
   document.querySelector("#today-label").textContent = `${t("today")} · ${dateLabel}`;
@@ -2080,7 +2080,7 @@ function updateProgress() {
     ? t("studentBeginner")
     : levelLabels[displayLanguage]?.[activeLevel] || levelLabels.en[activeLevel];
   document.querySelector(".welcome-copy").textContent = isA1 ? t("starterDescription") : activeLevel === "a2" ? t("advancedDescription") : levelDescription;
-  document.title = `Lớp tiếng Việt ${activeLevel.toUpperCase()} — Học cùng Mimi`;
+  document.title = "Lớp học tiếng Việt — Học cùng Mimi";
   document.querySelectorAll(".level-option").forEach((button) => {
     const active = button.dataset.level === activeLevel;
     button.classList.toggle("active", active);
