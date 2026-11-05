@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://api.qrserver.com; media-src 'self' blob: data:; frame-src 'none'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      name="description"
+      content="Lớp học tiếng Việt A1 và A2: bài học, từ vựng, mẫu câu, phát âm và luyện tập."
+    />
+    <meta name="theme-color" content="#fffaf2" />
+    <title>Lớp tiếng Việt A1–A2 — Học cùng Mimi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Điều hướng chính">
+        <a class="brand" href="#home" aria-label="Tiếng Việt cùng Mimi, trang chủ">
+          <span class="brand-mark" aria-hidden="true">m</span>
+          <span class="brand-copy">mimi<span class="brand-dot">.</span><small>HỌC VUI MỖI NGÀY</small></span>
+        </a>
+
+        <div class="nav-label" id="sidebar-level">LỚP TIẾNG VIỆT · A1</div>
+        <nav class="main-nav">
+          <a class="nav-link active" href="#home" data-nav="home">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z" /></svg>
+            <span>Tổng quan</span>
+          </a>
+          <a class="nav-link" href="#lessons" data-nav="lessons">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21z" /><path d="M4 5.5v13A2.5 2.5 0 0 1 6.5 16H20M8 7h8M8 10h6" /></svg>
+            <span>Bài học</span><span class="nav-count">08</span>
+          </a>
+          <a class="nav-link" href="#review" data-nav="review">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h9" /><path d="m16 17 2 2 4-5" /></svg>
+            <span>Ôn tập</span>
+          </a>
+          <a class="nav-link" href="#vocabulary" data-nav="vocabulary">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21z" /><path d="M4 5.5v13A2.5 2.5 0 0 1 6.5 16H20M9 8h6M9 11h4" /><path d="M16 8v5" /></svg>
+            <span>Từ vựng</span>
+          </a>
+          <a class="nav-link" href="#practice" data-nav="practice">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 12h8M12 8v8" /><circle cx="12" cy="12" r="9" /></svg>
+            <span>Luyện tập</span>
+          </a>
+          <a class="nav-link" href="#about" data-nav="about">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5 21a7 7 0 0 1 14 0M19 4l1.5 1.5L19 7" /></svg>
+            <span>Về Mimi</span>
+          </a>
+          <a class="nav-link" href="#feedback" data-nav="feedback">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z" /></svg>
+            <span>Feedback</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-spacer"></div>
+        <div class="sidebar-note">
+          <span class="note-sparkle" aria-hidden="true">✦</span>
+          <p>Chậm một chút<br />cũng là tiến bộ.</p>
+          <span class="note-caption">Mỗi ngày 10 phút nhé!</span>
+          <span class="note-doodle" aria-hidden="true">〰</span>
+        </div>
+        <div class="profile">
+          <div class="avatar" aria-hidden="true">M</div>
+          <div class="profile-name" id="student-level">Học viên A1<small id="student-level-description">Trình độ mới bắt đầu</small></div>
+          <button class="more-button" aria-label="Thông tin lưu tiến độ">···</button>
+        </div>
+      </aside>
+
+      <main class="main-content" id="home">
+        <header class="topbar">
+          <div class="breadcrumb"><span id="breadcrumb-level">Lớp tiếng Việt A1</span><span class="crumb-divider">/</span><strong id="breadcrumb-current">Tổng quan</strong></div>
+          <div class="topbar-actions">
+            <button class="appearance-toggle" id="appearance-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+              <span id="appearance-icon" aria-hidden="true">🌙</span>
+            </button>
+            <label class="cursor-picker">
+              <span aria-hidden="true">🖱️</span>
+              <select id="cursor-style" aria-label="Choose cursor style">
+                <option value="heart">💗 Pink heart</option>
+                <option value="flag">🇻🇳 Vietnam flag</option>
+                <option value="lotus">🪷 Pink lotus</option>
+              </select>
+            </label>
+            <label class="language-picker">
+              <span class="language-picker-label">🌐</span>
+              <select id="display-language" aria-label="Display language">
+                <option value="en">English</option>
+                <option value="zh-CN">简体中文</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="es">Español</option>
+                <option value="ar">العربية</option>
+              </select>
+            </label>
+            <div class="streak-pill" title="Số ngày học liên tiếp" aria-label="Số ngày học liên tiếp">
+              <span aria-hidden="true">🔥</span><strong id="streak-count">0</strong><span>ngày</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="page-content">
+          <section class="welcome-row">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-sun">☀</span> <span id="today-label"></span></p>
+              <h1>Chào mừng bạn! <span class="wave">✳</span></h1>
+              <p class="welcome-copy">Cùng học tiếng Việt từ những câu giao tiếp đầu tiên nhé.</p>
+            </div>
+            <div class="daily-goal">
+              <div class="goal-ring" id="goal-ring" style="--progress: 0%">
+                <div class="goal-ring-inner"><strong id="goal-percent">0%</strong><span>hôm nay</span></div>
+              </div>
+              <div class="goal-copy"><strong>Mục tiêu mỗi ngày</strong><span><b id="goal-minutes">0</b> / 20 phút</span></div>
+              <span class="goal-check" aria-hidden="true" hidden>✓</span>
+            </div>
+          </section>
+
+          <section class="level-switcher" aria-label="Chọn trình độ học">
+            <div class="level-switcher-copy"><span>CHỌN LỚP HỌC</span><strong id="level-switcher-description">Mới bắt đầu · học những câu giao tiếp đầu tiên</strong></div>
+            <div class="level-switcher-buttons" role="group" aria-label="Trình độ tiếng Việt">
+              <button class="level-option active" data-level="a1" aria-pressed="true">A1 <small>Mới bắt đầu</small></button>
+              <button class="level-option" data-level="a2" aria-pressed="false">A2 <small>Sơ cấp</small></button>
+              <button class="level-option" data-level="b1" aria-pressed="false">B1 <small>Trung cấp</small></button>
+              <button class="level-option" data-level="b2" aria-pressed="false">B2 <small>Trên trung cấp</small></button>
+              <button class="level-option" data-level="c1" aria-pressed="false">C1 <small>Nâng cao</small></button>
+              <button class="level-option" data-level="c2" aria-pressed="false">C2 <small>Thành thạo</small></button>
+            </div>
+          </section>
+
+          <details class="learning-preferences" id="learning-preferences">
+            <summary><span id="appearance-settings-title">Tùy chỉnh giao diện</span><span class="settings-summary-note" id="appearance-settings-note">Cỡ chữ · màu nền</span></summary>
+            <div class="preference-controls">
+              <label class="font-size-control" for="reader-font-size">
+                <span id="reader-font-label">Cỡ chữ bài học</span>
+                <span class="font-size-slider"><input id="reader-font-size" type="range" min="16" max="32" step="1" value="26" /><output id="reader-font-value" for="reader-font-size">26px</output></span>
+              </label>
+              <fieldset class="surface-color-control">
+                <legend id="surface-color-label">Màu nền</legend>
+                <div class="surface-color-options">
+                  <button type="button" class="surface-option" data-surface="blue" aria-pressed="false"><span class="surface-swatch surface-blue"></span><span id="surface-blue-label">Xanh biển</span></button>
+                  <button type="button" class="surface-option" data-surface="pink" aria-pressed="false"><span class="surface-swatch surface-pink"></span><span id="surface-pink-label">Hồng dịu</span></button>
+                  <button type="button" class="surface-option" data-surface="orange" aria-pressed="false"><span class="surface-swatch surface-orange"></span><span id="surface-orange-label">Cam đào</span></button>
+                  <button type="button" class="surface-option" data-surface="beige" aria-pressed="false"><span class="surface-swatch surface-beige"></span><span id="surface-beige-label">Be ấm</span></button>
+                </div>
+              </fieldset>
+            </div>
+          </details>
+
+          <section class="study-planner section-block" aria-labelledby="study-planner-title">
+            <div class="study-planner-heading">
+              <div><p class="section-overline" id="study-planner-kicker">LỘ TRÌNH HỌC CỦA RIÊNG BẠN</p><h2 id="study-planner-title">Bạn học tiếng Việt để làm gì?</h2></div>
+              <span class="study-plan-icon" aria-hidden="true">✦</span>
+            </div>
+            <form class="study-planner-form" id="study-planner-form">
+              <label class="study-field" for="study-goal"><span id="study-goal-label">Mục tiêu học</span>
+                <select id="study-goal" name="goal">
+                  <option value="travel">Du lịch và giao tiếp hằng ngày</option>
+                  <option value="family">Nói chuyện với người thân / bạn đời</option>
+                  <option value="work">Công việc hoặc học tập</option>
+                  <option value="living">Sống tại Việt Nam</option>
+                  <option value="culture">Văn hóa, phim ảnh và sở thích</option>
+                  <option value="exam">Chuẩn bị kỳ thi tiếng Việt</option>
+                </select>
+              </label>
+              <label class="study-field" for="study-start-level"><span id="study-level-label">Trình độ hiện tại</span>
+                <select id="study-start-level" name="level">
+                  <option value="a1">A1 · Mới bắt đầu</option><option value="a2">A2 · Sơ cấp</option>
+                  <option value="b1">B1 · Trung cấp</option><option value="b2">B2 · Trên trung cấp</option>
+                  <option value="c1">C1 · Nâng cao</option><option value="c2">C2 · Thành thạo</option>
+                </select>
+              </label>
+              <label class="study-field" for="study-days"><span id="study-days-label">Buổi học mỗi tuần</span>
+                <select id="study-days" name="days"><option value="2">2 buổi</option><option value="3" selected>3 buổi</option><option value="4">4 buổi</option><option value="5">5 buổi</option><option value="7">Mỗi ngày</option></select>
+              </label>
+              <label class="study-field" for="study-minutes"><span id="study-minutes-label">Phút mỗi buổi</span>
+                <select id="study-minutes" name="minutes"><option value="15">15 phút</option><option value="20" selected>20 phút</option><option value="30">30 phút</option><option value="45">45 phút</option><option value="60">60 phút</option></select>
+              </label>
+              <button class="study-plan-submit" id="study-plan-submit" type="submit">Tạo lộ trình học</button>
+            </form>
+            <section class="study-plan-result" id="study-plan-result" aria-live="polite" hidden>
+              <h3 id="study-plan-result-title"></h3>
+              <p id="study-plan-summary"></p>
+              <p id="study-plan-focus"></p>
+              <p class="study-plan-disclaimer" id="study-plan-disclaimer"></p>
+              <label class="study-ai-prompt-label" for="study-ai-prompt" id="study-ai-prompt-label">Prompt để nhờ AI góp ý</label>
+              <textarea id="study-ai-prompt" rows="5" readonly></textarea>
+              <div class="study-plan-actions">
+                <button type="button" id="study-ai-copy">Sao chép prompt</button>
+                <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" id="study-ai-chatgpt">Mở ChatGPT ↗</a>
+                <a href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer" id="study-ai-gemini">Mở Gemini ↗</a>
+              </div>
+            </section>
+          </section>
+
+          <section class="hero-card" aria-labelledby="hero-title">
+            <div class="hero-text">
+              <div class="hero-kicker"><span class="live-dot"></span> <span id="hero-kicker-text">KHÓA HỌC DÀNH CHO NGƯỜI MỚI</span> <span class="free-pill">FREE SELF-STUDY</span> <span class="level-pill" id="hero-level-pill">TRÌNH ĐỘ A1</span></div>
+              <h2 id="hero-title">Bắt đầu nói<br /><span>tiếng Việt nhé!</span></h2>
+              <p id="hero-description">Học chào hỏi, giới thiệu bản thân và những<br />tình huống gần gũi trong cuộc sống.</p>
+              <a class="primary-button" id="continue-learning" href="#lessons">Bắt đầu học <span aria-hidden="true">→</span></a>
+              <div class="hero-progress">
+                <span id="course-progress-title">Lộ trình tiếng Việt A1</span><strong id="course-progress-label">0 / 24 bài học</strong>
+                <div class="progress-track"><span id="course-progress-bar" style="width: 0%"></span></div>
+              </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+              <svg class="hero-book-art" viewBox="0 0 360 250" role="img" aria-label="Cuốn sách mở học tiếng Việt">
+                <circle cx="238" cy="93" r="66" fill="#f6bd79" opacity=".6" />
+                <path d="M56 202c34-25 70-29 113-13 9 3 18 3 27 0 42-16 78-12 111 13v21H56z" fill="#f4cba7" />
+                <path d="M88 92c31 4 61 9 90 14v112c-31-18-60-20-90-1z" fill="#d97855" stroke="#bd6249" stroke-width="5" stroke-linejoin="round" />
+                <path d="M272 92c-31 4-61 9-94 14v112c31-18 60-20 94-1z" fill="#d97855" stroke="#bd6249" stroke-width="5" stroke-linejoin="round" />
+                <path d="M96 99c28 4 55 8 82 12v97c-28-15-55-16-82-2z" fill="#fff9ed" />
+                <path d="M264 99c-28 4-55 8-86 12v97c28-15 55-16 86-2z" fill="#fff9ed" />
+                <path d="M178 111v105" fill="none" stroke="#efc7a2" stroke-width="3" />
+                <text x="135" y="139" text-anchor="middle" fill="#d77854" font-family="Nunito, sans-serif" font-size="12" font-weight="800">TIẾNG VIỆT</text>
+                <path d="M111 151h48m-48 12h42m-42 12h34" fill="none" stroke="#e9b08c" stroke-width="4" stroke-linecap="round" />
+                <text x="221" y="140" text-anchor="middle" fill="#c56c4f" font-family="Nunito, sans-serif" font-size="14" font-weight="800">Xin chào!</text>
+                <circle cx="220" cy="172" r="17" fill="#ffe5ce" stroke="#e8aa77" stroke-width="2" />
+                <circle cx="214" cy="169" r="1.8" fill="#8d5f4c" /><circle cx="226" cy="169" r="1.8" fill="#8d5f4c" />
+                <path d="M214 176q6 6 12 0" fill="none" stroke="#bd7059" stroke-width="2" stroke-linecap="round" />
+                <path d="m68 71 4 9 9 2-9 4-4 9-3-9-9-4 9-2zM295 67l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#df9c5e" />
+                <circle cx="302" cy="176" r="4" fill="#f08c76" /><circle cx="55" cy="123" r="3" fill="#f08c76" />
+              </svg>
+            </div>
+          </section>
+
+          <section class="section-block culture-section" aria-labelledby="culture-heading">
+            <div class="section-heading culture-heading">
+              <div>
+                <p class="section-overline" id="culture-kicker">HỌC TIẾNG VIỆT QUA VĂN HÓA</p>
+                <h2 id="culture-heading"><span id="culture-heading-text">Góc văn hóa Việt Nam</span> <span class="heading-sparkle">✿</span></h2>
+              </div>
+              <span class="culture-badge" id="culture-badge">VĂN HÓA · TỪ VỰNG · LỊCH SỬ</span>
+            </div>
+            <div class="holiday-stage" id="holiday-stage" aria-labelledby="holiday-title" aria-live="polite">
+              <div class="holiday-decoration"></div>
+              <div class="holiday-copy">
+                <p class="section-overline" id="holiday-kicker">SẮP DIỄN RA Ở VIỆT NAM</p>
+                <h3 id="holiday-title"></h3>
+                <p class="holiday-date" id="holiday-date"></p>
+                <p class="holiday-description" id="holiday-description"></p>
+                <p class="holiday-fact" id="holiday-fact"></p>
+                <p class="holiday-vocabulary" id="holiday-vocabulary"></p>
+                <a class="translate-link" id="holiday-translate" target="_blank" rel="noopener noreferrer"></a>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-block pronunciation-card" id="a1-pronunciation-foundation" aria-labelledby="pronunciation-title">
+            <div class="pronunciation-copy">
+              <p class="section-overline" id="pronunciation-overline">BẮT ĐẦU TẠI ĐÂY · NỀN TẢNG A1</p>
+              <h2 id="pronunciation-title">Gợi ý luyện phát âm tiếng Việt</h2>
+              <p id="pronunciation-description">Tài liệu tham khảo bên ngoài để luyện phát âm. Nếu video không mở được, bạn vẫn có thể tiếp tục bài học A1 trên trang này.</p>
+            </div>
+            <a class="recordings-link" id="pronunciation-link" href="https://youtu.be/mGCsUzhPAHE?si=jSHXf2L9yzNVelKn" target="_blank" rel="noopener noreferrer">Xem gợi ý phát âm trên YouTube ↗</a>
+          </section>
+
+          <section class="section-block lesson-section" id="lessons">
+            <div class="section-heading">
+              <div><p class="section-overline" id="lesson-overline">24 CHỦ ĐỀ GIAO TIẾP CƠ BẢN</p><h2 id="lesson-heading">Lộ trình tiếng Việt A1 <span class="heading-sparkle">✳</span></h2></div>
+              <a class="text-link" href="#lessons">Xem tất cả <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="lesson-grid" id="lesson-grid"></div>
+          </section>
+
+          <section class="section-block vocabulary-library" id="vocabulary">
+            <div class="section-heading">
+              <div><p class="section-overline" id="vocabulary-overline">TỪ NGỮ DÙNG TRONG ĐỜI SỐNG</p><h2 id="vocabulary-heading">Từ vựng & mẫu câu A1 <span class="heading-sparkle">✳</span></h2></div>
+              <span class="vocab-total" id="vocab-total"></span>
+            </div>
+            <p class="library-intro">Tra nghĩa và học từ vựng, mẫu câu theo từng chủ đề.</p>
+            <div class="library-toolbar">
+              <label class="search-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+                <input id="vocab-search" type="search" placeholder="Tìm từ, mẫu câu hoặc nghĩa tiếng Anh..." autocomplete="off" />
+              </label>
+              <div class="library-tabs" role="group" aria-label="Loại nội dung">
+                <button class="library-tab active" data-kind="words" aria-pressed="true">Từ vựng</button>
+                <button class="library-tab" data-kind="phrases" aria-pressed="false">Mẫu câu</button>
+              </div>
+            </div>
+            <div class="topic-filters" id="topic-filters" role="group" aria-label="Lọc từ theo chủ đề"></div>
+            <section class="recordings-card" id="a1-recordings" aria-labelledby="recordings-heading">
+              <div class="recordings-copy">
+                <p class="section-overline">BẢN GHI ÂM CỦA GIÁO VIÊN · A1</p>
+                <h3 id="recordings-heading">Nghe giọng cô nhé!</h3>
+                <p>Sau khi cô tải bản ghi âm lên, học viên quét mã QR để mở thư mục và nghe.</p>
+                <a class="recordings-link" href="https://drive.google.com/drive/folders/1F75xJ3BrkW24d0STkdiW_sQiflPEzYTT?usp=sharing" target="_blank" rel="noopener noreferrer">Mở thư mục ghi âm <span aria-hidden="true">↗</span></a>
+              </div>
+              <a class="recordings-qr-link" href="https://drive.google.com/drive/folders/1F75xJ3BrkW24d0STkdiW_sQiflPEzYTT?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Mở thư mục bản ghi âm tiếng Việt A1">
+                <img
+                  class="recordings-qr"
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&amp;margin=8&amp;data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1F75xJ3BrkW24d0STkdiW_sQiflPEzYTT"
+                  alt="Mã QR mở thư mục bản ghi âm tiếng Việt A1 trên Google Drive"
+                  width="132"
+                  height="132"
+                  loading="lazy"
+                />
+              </a>
+            </section>
+            <section class="recordings-card" id="a2-recordings" aria-labelledby="a2-recordings-heading" hidden>
+              <div class="recordings-copy">
+                <p class="section-overline">BẢN GHI ÂM CỦA GIÁO VIÊN · A2</p>
+                <h3 id="a2-recordings-heading">Nghe giọng cô nhé!</h3>
+                <p>Sau khi cô tải bản ghi âm lên, học viên quét mã QR để mở thư mục và nghe.</p>
+                <a class="recordings-link" href="https://drive.google.com/drive/folders/1bdJiKPo5EcVc_wrh_vlr-PLqmxqQOgx0?usp=sharing" target="_blank" rel="noopener noreferrer">Mở thư mục ghi âm <span aria-hidden="true">↗</span></a>
+              </div>
+              <a class="recordings-qr-link" href="https://drive.google.com/drive/folders/1bdJiKPo5EcVc_wrh_vlr-PLqmxqQOgx0?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Mở thư mục bản ghi âm tiếng Việt A2">
+                <img
+                  class="recordings-qr"
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&amp;margin=8&amp;data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1bdJiKPo5EcVc_wrh_vlr-PLqmxqQOgx0"
+                  alt="Mã QR mở thư mục bản ghi âm tiếng Việt A2 trên Google Drive"
+                  width="132"
+                  height="132"
+                  loading="lazy"
+                />
+              </a>
+            </section>
+            <section class="recordings-card" id="b1-recordings" aria-labelledby="b1-recordings-heading" hidden>
+              <div class="recordings-copy">
+                <p class="section-overline">BẢN GHI ÂM CỦA GIÁO VIÊN · B1</p>
+                <h3 id="b1-recordings-heading">Nghe giọng cô nhé!</h3>
+                <p>Quét mã QR hoặc mở thư mục để nghe bài ghi âm tiếng Việt B1.</p>
+                <a class="recordings-link" href="https://drive.google.com/drive/folders/1k7t8bO5bF8Ni7hTQVQSUnbbCgrZevo7U?usp=sharing" target="_blank" rel="noopener noreferrer">Mở thư mục ghi âm <span aria-hidden="true">↗</span></a>
+              </div>
+              <a class="recordings-qr-link" href="https://drive.google.com/drive/folders/1k7t8bO5bF8Ni7hTQVQSUnbbCgrZevo7U?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Mở thư mục bản ghi âm tiếng Việt B1">
+                <img class="recordings-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&amp;margin=8&amp;data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1k7t8bO5bF8Ni7hTQVQSUnbbCgrZevo7U" alt="Mã QR mở thư mục bản ghi âm tiếng Việt B1 trên Google Drive" width="132" height="132" loading="lazy" />
+              </a>
+            </section>
+            <section class="recordings-card" id="b2-recordings" aria-labelledby="b2-recordings-heading" hidden>
+              <div class="recordings-copy">
+                <p class="section-overline">BẢN GHI ÂM CỦA GIÁO VIÊN · B2</p>
+                <h3 id="b2-recordings-heading">Nghe giọng cô nhé!</h3>
+                <p>Quét mã QR hoặc mở thư mục để nghe bài ghi âm tiếng Việt B2.</p>
+                <a class="recordings-link" href="https://drive.google.com/drive/folders/1X4QD2xOu3RMIb69FD3hlIx1ea10GcFIv?usp=sharing" target="_blank" rel="noopener noreferrer">Mở thư mục ghi âm <span aria-hidden="true">↗</span></a>
+              </div>
+              <a class="recordings-qr-link" href="https://drive.google.com/drive/folders/1X4QD2xOu3RMIb69FD3hlIx1ea10GcFIv?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Mở thư mục bản ghi âm tiếng Việt B2">
+                <img class="recordings-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&amp;margin=8&amp;data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1X4QD2xOu3RMIb69FD3hlIx1ea10GcFIv" alt="Mã QR mở thư mục bản ghi âm tiếng Việt B2 trên Google Drive" width="132" height="132" loading="lazy" />
+              </a>
+            </section>
+            <section class="recordings-card" id="c1-recordings" aria-labelledby="c1-recordings-heading" hidden>
+              <div class="recordings-copy">
+                <p class="section-overline">BẢN GHI ÂM CỦA GIÁO VIÊN · C1</p>
+                <h3 id="c1-recordings-heading">Nghe giọng cô nhé!</h3>
+                <p>Quét mã QR hoặc mở thư mục để nghe bài ghi âm tiếng Việt C1.</p>
+                <a class="recordings-link" href="https://drive.google.com/drive/folders/1xUyOI6EBJbSS_97-H631DQaxHw-YnUPa?usp=sharing" target="_blank" rel="noopener noreferrer">Mở thư mục ghi âm <span aria-hidden="true">↗</span></a>
+              </div>
+              <a class="recordings-qr-link" href="https://drive.google.com/drive/folders/1xUyOI6EBJbSS_97-H631DQaxHw-YnUPa?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Mở thư mục bản ghi âm tiếng Việt C1">
+                <img class="recordings-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&amp;margin=8&amp;data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1xUyOI6EBJbSS_97-H631DQaxHw-YnUPa" alt="Mã QR mở thư mục bản ghi âm tiếng Việt C1 trên Google Drive" width="132" height="132" loading="lazy" />
+              </a>
+            </section>
+            <section class="recordings-card" id="c2-recordings" aria-labelledby="c2-recordings-heading" hidden>
+              <div class="recordings-copy">
+                <p class="section-overline">BẢN GHI ÂM CỦA GIÁO VIÊN · C2</p>
+                <h3 id="c2-recordings-heading">Nghe giọng cô nhé!</h3>
+                <p>Quét mã QR hoặc mở thư mục để nghe bài ghi âm tiếng Việt C2.</p>
+                <a class="recordings-link" href="https://drive.google.com/drive/folders/1lp1wV928fAai3RZBeqtXvWnDhxX5GTL_?usp=sharing" target="_blank" rel="noopener noreferrer">Mở thư mục ghi âm <span aria-hidden="true">↗</span></a>
+              </div>
+              <a class="recordings-qr-link" href="https://drive.google.com/drive/folders/1lp1wV928fAai3RZBeqtXvWnDhxX5GTL_?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Mở thư mục bản ghi âm tiếng Việt C2">
+                <img class="recordings-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&amp;margin=8&amp;data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1lp1wV928fAai3RZBeqtXvWnDhxX5GTL_" alt="Mã QR mở thư mục bản ghi âm tiếng Việt C2 trên Google Drive" width="132" height="132" loading="lazy" />
+              </a>
+            </section>
+            <div class="vocabulary-grid" id="vocabulary-grid" aria-live="polite"></div>
+            <p class="empty-vocabulary" id="empty-vocabulary" hidden>Chưa tìm thấy nội dung phù hợp. Thử từ khóa khác nhé.</p>
+          </section>
+
+          <section class="section-block practice-layout" id="practice">
+            <div class="practice-card">
+              <div class="practice-topline"><span class="practice-icon" aria-hidden="true">✦</span><span class="practice-tag">THỬ THÁCH NHỎ</span><span class="practice-time">2 phút</span></div>
+              <h2>Nhớ từ này<br />không nhỉ?</h2>
+              <p>Chọn nghĩa đúng của từ bên dưới nhé.</p>
+              <div class="quiz-question" id="quiz-question"></div>
+              <div class="quiz-answers" id="quiz-answers"></div>
+              <div class="quiz-feedback" id="quiz-feedback" aria-live="polite"></div>
+              <button class="quiz-next" id="quiz-next" hidden>Câu tiếp theo <span aria-hidden="true">→</span></button>
+            </div>
+          </section>
+
+          <section class="section-block review-section" id="review">
+            <div class="section-heading">
+              <div><p class="section-overline">LISTENING · SPEAKING · WRITING</p><h2 id="review-heading">Góc ôn luyện <span class="heading-sparkle">✳</span></h2></div>
+              <span class="free-access-badge">Ôn tập miễn phí</span>
+            </div>
+            <div class="review-card">
+              <div class="review-toolbar">
+                <label for="review-lesson">Chọn bài muốn ôn</label>
+                <select id="review-lesson"></select>
+              </div>
+              <div class="review-tabs" role="tablist" aria-label="Kỹ năng ôn tập">
+                <button class="review-tab active" id="review-tab-listening" role="tab" aria-selected="true" aria-controls="review-listening" data-skill="listening">🎧 Listening</button>
+                <button class="review-tab" id="review-tab-speaking" role="tab" aria-selected="false" aria-controls="review-speaking" data-skill="speaking">🗣️ Speaking</button>
+                <button class="review-tab" id="review-tab-writing" role="tab" aria-selected="false" aria-controls="review-writing" data-skill="writing">✍️ Writing</button>
+              </div>
+              <section class="review-panel" id="review-listening" role="tabpanel" aria-labelledby="review-tab-listening">
+                <p class="review-skill-label">NGHE VÀ TRẢ LỜI</p>
+                <h3 id="listening-title"></h3>
+                <p id="listening-instructions"></p>
+                <a class="recordings-link" id="listening-recording-link" href="#" target="_blank" rel="noopener noreferrer">Mở thư mục ghi âm lớp <span aria-hidden="true">↗</span></a>
+                <form class="review-answer-form" id="listening-answer-form"></form>
+              </section>
+              <section class="review-panel" id="review-speaking" role="tabpanel" aria-labelledby="review-tab-speaking" hidden>
+                <p class="review-skill-label">NÓI THÀNH TIẾNG</p>
+                <h3 class="review-speaking-title">Hãy nói về chủ đề này</h3>
+                <p id="speaking-prompt"></p>
+                <div class="recorder-controls">
+                  <button class="record-button" id="record-speaking" type="button">● Bắt đầu ghi âm</button>
+                  <audio id="speaking-playback" controls hidden></audio>
+                  <a class="recording-download" id="speaking-download" download hidden>Tải bài nói xuống</a>
+                </div>
+                <p class="recorder-note" id="recorder-note">Cho phép trình duyệt dùng micro, nói khoảng 30–60 giây rồi nghe lại. Sau khi tải bản ghi xuống, em có thể đính kèm vào tin nhắn WhatsApp.</p>
+                <a class="exercise-submit speaking-submit" id="speaking-whatsapp" href="https://wa.me/84911891345" target="_blank" rel="noopener noreferrer">Gửi bài nói cho cô qua WhatsApp ↗</a>
+              </section>
+              <section class="review-panel" id="review-writing" role="tabpanel" aria-labelledby="review-tab-writing" hidden>
+                <p class="review-skill-label">VIẾT MẪU CÂU</p>
+                <h3 id="writing-title"></h3>
+                <p>Tham khảo mẫu câu, rồi tự viết 3 câu mới. Có thể thay thông tin trong ngoặc bằng ý của em.</p>
+                <div class="writing-model" id="writing-model"></div>
+                <form class="review-answer-form" id="writing-answer-form"></form>
+              </section>
+              <p class="translation-disclaimer"></p>
+              <p class="ai-grading-note">AI chấm bài bằng ChatGPT/Gemini chưa được kết nối. Hiện em có thể gửi bài cho cô chữa miễn phí qua WhatsApp.</p>
+            </div>
+          </section>
+
+          <section class="section-block about-section" id="about">
+            <div class="section-heading">
+              <div><p class="section-overline">MEET YOUR VIETNAMESE TUTOR</p><h2 id="about-heading">Meet Mimi <span class="heading-sparkle">✳</span></h2></div>
+            </div>
+            <div class="about-card">
+              <div class="about-copy">
+                <p class="about-greeting"><strong>Xin chào!</strong> I'm Mimi, a Vietnamese tutor from Ho Chi Minh City, Vietnam.</p>
+                <p>I'm currently studying Oriental Studies at the University of Social Sciences and Humanities – Vietnam National University, Ho Chi Minh City (USSH – VNU-HCM). I enjoy teaching Vietnamese and helping international learners feel more confident communicating with native speakers. Lessons are adapted to each learner's goals and pace.</p>
+                <p class="about-profile-link"><a id="linkedin-profile-link" href="https://www.linkedin.com/in/ngọc-thảo-my-lâm-143280429?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios" target="_blank" rel="me noopener noreferrer">View Mimi's LinkedIn profile ↗</a></p>
+                <h3>What can you learn with me?</h3>
+                <ul class="about-list">
+                  <li><strong>Everyday Vietnamese:</strong> Communicate naturally in daily situations.</li>
+                  <li><strong>Pronunciation:</strong> Improve tones, pronunciation and speaking fluency.</li>
+                  <li><strong>Practical conversations:</strong> Practice real-life situations, from ordering food to chatting with Vietnamese friends.</li>
+                  <li><strong>Vocabulary and grammar:</strong> Build a strong foundation with useful words and sentence structures.</li>
+                  <li><strong>Vietnamese culture:</strong> Discover local expressions, customs, food and everyday life.</li>
+                </ul>
+                <h3>My teaching style</h3>
+                <p>Lessons are enjoyable, practical and interactive, with personalized Canva materials, real-life examples, quizzes, speaking activities, homework and feedback. I can teach in English and explain Vietnamese simply. I'm patient and supportive, and mistakes are welcome. As a native speaker from Southern Vietnam, I can help you get familiar with the Southern accent and everyday expressions.</p>
+                <p class="about-closing">Mistakes are part of learning. Whether you want to travel, connect with family, work in Vietnam or explore a new language, let's make learning Vietnamese fun and meaningful!</p>
+              </div>
+              <aside class="booking-card" aria-labelledby="booking-heading">
+                <span class="booking-icon" aria-hidden="true">♡</span>
+                <p class="section-overline">WANT MORE PERSONALIZED PRACTICE?</p>
+                <h3 id="booking-heading">Book a lesson with Mimi</h3>
+                <p>All A1–C2 self-study materials on this site are free to access. For a more detailed, personalized lesson, message me on WhatsApp.</p>
+                <p class="free-correction-note">You can also send your lesson exercises to Mimi on WhatsApp for free correction.</p>
+                <a class="whatsapp-button" href="https://wa.me/84911891345?text=Hi%20Mimi%2C%20I%27d%20like%20to%20ask%20about%20booking%20a%20Vietnamese%20lesson." target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.6 8.6 0 0 1-12.7 7.5L3 20.5l1.4-4.6a8.6 8.6 0 1 1 16.1-4.3Z" /><path d="M8.8 8.2c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4 0 .6l-.5.7c-.2.2-.2.4 0 .6.4.7 1 1.3 1.7 1.7.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.5-.5.5-1.2.7-1.9.5-1.2-.3-2.7-1.1-3.8-2.2-1.2-1.2-2-2.7-2.1-3.5-.1-.7.4-1.3.8-1.6Z" /></svg>
+                  Message on WhatsApp
+                </a>
+                <a class="booking-phone" href="tel:+84911891345">WhatsApp: +84 911 891 345</a>
+                <div class="support-note">
+                  <span class="support-heart" aria-hidden="true">♡</span>
+                  <div>
+                    <strong id="support-title">Enjoying the free lessons?</strong>
+                    <p id="support-copy">If you’d like, you can help Mimi maintain this page. Completely optional — learning materials remain free either way.</p>
+                    <a id="support-link" href="https://paypal.me/MyLam12" target="_blank" rel="noopener noreferrer">Support Mimi on PayPal</a>
+                  </div>
+                </div>
+                <a class="whatsapp-qr-link" href="https://wa.me/84911891345?text=Hi%20Mimi%2C%20I%27d%20like%20to%20ask%20about%20booking%20a%20Vietnamese%20lesson." target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp to contact Mimi">
+                  <img
+                    class="whatsapp-qr"
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=280x280&amp;margin=10&amp;data=https%3A%2F%2Fwa.me%2F84911891345"
+                    alt="QR code to message Mimi on WhatsApp at +84 911 891 345"
+                    width="168"
+                    height="168"
+                    loading="lazy"
+                  />
+                </a>
+                <span class="qr-caption">Scan to chat on WhatsApp</span>
+              </aside>
+            </div>
+          </section>
+
+          <section class="section-block course-feedback" id="course-feedback" aria-labelledby="course-feedback-title" hidden>
+            <div class="section-heading">
+              <div><p class="section-overline" id="course-feedback-overline">BẠN ĐÃ HOÀN THÀNH 100% KHÓA HỌC</p><h2 id="course-feedback-title">Chia sẻ cảm nhận của bạn <span class="heading-sparkle">♡</span></h2></div>
+              <span class="free-access-badge" id="feedback-level-badge">A1 · 100%</span>
+            </div>
+            <form class="feedback-card" id="course-feedback-form">
+              <p class="feedback-intro" id="feedback-intro">Chúc mừng bạn đã hoàn thành khóa học! Hãy để lại góp ý để Mimi cải thiện bài học nhé.</p>
+              <label class="feedback-field" for="feedback-name"><span id="feedback-name-label">Tên của bạn</span><input id="feedback-name" name="name" type="text" maxlength="80" autocomplete="name" required /></label>
+              <label class="feedback-field" for="feedback-rating"><span id="feedback-rating-label">Bạn đánh giá khóa học thế nào?</span><select id="feedback-rating" name="rating" required><option value="">Chọn mức đánh giá</option><option value="5">★★★★★ · Rất tốt</option><option value="4">★★★★☆ · Tốt</option><option value="3">★★★☆☆ · Bình thường</option><option value="2">★★☆☆☆ · Cần cải thiện</option><option value="1">★☆☆☆☆ · Chưa phù hợp</option></select></label>
+              <label class="feedback-field" for="feedback-message"><span id="feedback-message-label">Góp ý của bạn</span><textarea id="feedback-message" name="message" rows="4" maxlength="2000" required></textarea></label>
+              <p class="feedback-privacy" id="feedback-privacy">Góp ý chỉ được lưu trên thiết bị này; trang web không gửi tên hay nội dung cho bên thứ ba.</p>
+              <button class="primary-button feedback-submit" type="submit" id="feedback-submit">Lưu góp ý</button>
+              <p class="feedback-success" id="feedback-success" role="status" hidden></p>
+            </form>
+          </section>
+
+          <section class="section-block feedback-wall" id="feedback" aria-labelledby="feedback-wall-title">
+            <div class="section-heading">
+              <div>
+                <p class="section-overline" id="feedback-wall-overline">FEEDBACK · MẪU MINH HỌA</p>
+                <h2 id="feedback-wall-title">Cảm nhận học viên</h2>
+              </div>
+              <span class="free-access-badge" id="feedback-demo-badge">HỒ SƠ GIẢ LẬP</span>
+            </div>
+            <p class="feedback-wall-intro" id="feedback-wall-intro">Đây là hai hồ sơ và lời nhận xét hư cấu để minh họa giao diện, không phải feedback từ học viên thật.</p>
+            <div class="feedback-wall-grid">
+              <article class="learner-feedback-card">
+                <div class="learner-feedback-meta">
+                  <span class="learner-avatar" aria-hidden="true">M</span>
+                  <div><h3 id="demo-learner-one">Mai Anh</h3><span class="demo-profile-label" id="demo-profile-one-label">Hồ sơ minh họa · không phải học viên thật</span></div>
+                  <span class="learner-level-badge" id="demo-level-one">A1 · 100%</span>
+                </div>
+                <p class="learner-feedback-rating" aria-label="5 out of 5 stars">★★★★★</p>
+                <blockquote id="demo-feedback-one"></blockquote>
+              </article>
+              <article class="learner-feedback-card">
+                <div class="learner-feedback-meta">
+                  <span class="learner-avatar learner-avatar-alt" aria-hidden="true">A</span>
+                  <div><h3 id="demo-learner-two">Alex</h3><span class="demo-profile-label" id="demo-profile-two-label">Hồ sơ minh họa · không phải học viên thật</span></div>
+                  <span class="learner-level-badge" id="demo-level-two">B1 · 100%</span>
+                </div>
+                <p class="learner-feedback-rating" aria-label="5 out of 5 stars">★★★★★</p>
+                <blockquote id="demo-feedback-two"></blockquote>
+              </article>
+            </div>
+          </section>
+
+          <footer class="footer"><span>Học vui cùng Mimi <span class="footer-heart">♥</span></span><span>Tiến độ lưu trên trình duyệt của học viên.</span></footer>
+        </div>
+      </main>
+    </div>
+    <dialog class="lesson-dialog" id="lesson-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-header">
+        <div><p class="section-overline" id="dialog-category"></p><h2 id="dialog-title"></h2></div>
+        <button class="dialog-close" id="dialog-close" aria-label="Đóng bài học">×</button>
+      </div>
+      <p class="dialog-intro" id="dialog-intro">Cùng học những từ và câu ngắn dưới đây nhé.</p>
+      <section class="lesson-reading" aria-labelledby="dialog-reading-heading">
+        <p class="section-overline">BÀI ĐỌC ÔN LUYỆN</p>
+        <h3 id="dialog-reading-heading">Đọc và trả lời</h3>
+        <p class="reading-passage" id="dialog-reading"></p>
+        <ol class="reading-questions" id="dialog-reading-questions"></ol>
+        <a class="translate-link" id="dialog-reading-translate" target="_blank" rel="noopener noreferrer">Translate this reading ↗</a>
+        <section class="reading-news-resources" id="dialog-reading-resources" aria-labelledby="dialog-reading-resources-title" hidden>
+          <h4 id="dialog-reading-resources-title">Bài báo đọc thêm</h4>
+          <p id="dialog-reading-resources-note">Tìm bài báo tiếng Việt cùng chủ đề để luyện đọc tài liệu thực tế.</p>
+          <div class="reading-news-links" id="dialog-reading-news-links"></div>
+        </section>
+      </section>
+      <section class="lesson-grammar" id="dialog-grammar" aria-label="Ngữ pháp trọng tâm"></section>
+      <div class="dialog-vocabulary" id="dialog-vocabulary"></div>
+      <section class="lesson-exercises-section" aria-labelledby="exercise-heading">
+        <div class="exercise-heading-row">
+          <div><p class="section-overline">BÀI TẬP MIỄN PHÍ</p><h3 id="exercise-heading">Luyện tập bài này</h3></div>
+          <span class="exercise-count">3 câu</span>
+        </div>
+        <p class="exercise-intro">Làm cả 3 câu rồi gửi cho Mimi qua WhatsApp để được chữa bài miễn phí.</p>
+        <div id="dialog-exercises"></div>
+      </section>
+      <div class="dialog-footer">
+        <span class="dialog-duration" id="dialog-duration"></span>
+        <button class="primary-button dialog-complete" id="dialog-complete">Hoàn thành bài học <span aria-hidden="true">✓</span></button>
+      </div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
