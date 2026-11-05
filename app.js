@@ -582,6 +582,27 @@ const cursorArtwork = {
 
 function applyCursorStyle() {
   const artwork = encodeURIComponent(cursorArtwork[cursorStyle]);
+  let cursorIndicator = document.querySelector("#custom-cursor-indicator");
+  if (!cursorIndicator) {
+    cursorIndicator = document.createElement("span");
+    cursorIndicator.id = "custom-cursor-indicator";
+    cursorIndicator.setAttribute("aria-hidden", "true");
+    document.body.append(cursorIndicator);
+    window.addEventListener("pointermove", (event) => {
+      if (event.pointerType === "touch") {
+        cursorIndicator.hidden = true;
+        return;
+      }
+      cursorIndicator.hidden = false;
+      cursorIndicator.style.left = `${event.clientX - 16}px`;
+      cursorIndicator.style.top = `${event.clientY - 16}px`;
+    });
+    document.documentElement.addEventListener("pointerleave", () => {
+      cursorIndicator.hidden = true;
+    });
+  }
+  cursorIndicator.style.backgroundImage = `url("data:image/svg+xml,${artwork}")`;
+  document.documentElement.dataset.customCursor = "true";
   document.documentElement.style.setProperty(
     "--cursor-image",
     `url("data:image/svg+xml,${artwork}") 16 16, auto`,

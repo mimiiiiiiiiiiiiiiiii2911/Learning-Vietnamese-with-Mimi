@@ -415,6 +415,24 @@ input, textarea { cursor: text; }
 }
 @media (hover: none) { html, body, a, button, [role="button"], select { cursor: auto; } }
 
+html[data-custom-cursor="true"],
+html[data-custom-cursor="true"] * { cursor: none !important; }
+#custom-cursor-indicator {
+  position: fixed;
+  z-index: 2147483647;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+#custom-cursor-indicator[hidden] { display: none; }
+@media (hover: none) {
+  html[data-custom-cursor="true"],
+  html[data-custom-cursor="true"] * { cursor: auto !important; }
+  #custom-cursor-indicator { display: none !important; }
+}
+
 .appearance-toggle {
   display: grid;
   width: 32px;
